@@ -34,11 +34,9 @@ sharding {
 Setup REST endpoint:
 
 ```javascript
-sharding {
-  nodes: [
-    "127.0.0.1:7780",
-    "127.0.0.1:7781"
-  ]
+rest {
+  host: "0.0.0.0"
+  port: 8082
 }
 ```
 
