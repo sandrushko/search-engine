@@ -12,5 +12,6 @@ lazy val searchEngine = project
     libraryDependencies ++= scalajDependencies,
     libraryDependencies ++= specs2Dependencies
   ).settings(
-    scalacOptions in Test ++= Seq("-Yrangepos")
+    scalacOptions in Test ++= Seq("-Yrangepos"),
+    Compile / run / fork := true
   )
